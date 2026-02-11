@@ -7,9 +7,6 @@ from apps.applications.models import Application
 
 @receiver(post_save, sender=Application)
 def send_application_notifications(sender, instance, created, **kwargs):
-    """
-    Trigger emails when an Application is created or updated.
-    """
 
     # CASE 1: New Application Created
     if created:
