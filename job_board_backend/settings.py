@@ -69,7 +69,7 @@ ROOT_URLCONF = "job_board_backend.urls"
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",          # React / Next.js Local
-    "https://job-flow-meaw.netlify.app", # Your Production Frontend
+    "https://job-board-frontend-lovat.vercel.app",
 ]
 
 # 4. Allow Credentials (if you use cookies/sessions, though you use JWT so this is optional but good)
@@ -78,7 +78,7 @@ CORS_ALLOW_CREDENTIALS = True
 # 5. CSRF Trusted Origins (Required for Django 4.0+ if doing POST requests from another domain)
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
-    "https://https://job-flow-meaw.netlify.app",
+    "https://job-board-frontend-lovat.vercel.app",
 ]
 
 TEMPLATES = [
